@@ -48,11 +48,11 @@
 
 			<h2 class="page-header">Computer Info</h2>
 			<ul class="list-group">
-				<li class="list-group-item">Computer Name: </li>
-				<li class="list-group-item">Username: </li>
-				<li class="list-group-item">User Home Path: </li>
-				<li class="list-group-item">Sysem Drive: </li>
-				<li class="list-group-item">Sysem Root: </li>
+				<li class="list-group-item">Computer Name: ${process.env.USERDOMAIN}</li>
+				<li class="list-group-item">Username: ${process.env.USERNAME}</li>
+				<li class="list-group-item">User Home Path: ${process.env.HOME}</li>
+				<li class="list-group-item">Sysem Drive: ${process.env.SYSTEMDRIVE}</li>
+				<li class="list-group-item">Sysem Root: ${process.env.SYSTEMROOT}</li>
 			</ul>
 		`;
 
