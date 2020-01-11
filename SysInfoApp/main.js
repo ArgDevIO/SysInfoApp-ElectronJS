@@ -10,7 +10,10 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    icon: __dirname + '/img/icon.png'
+    icon: __dirname + '/img/icon.png',
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
 
   // Load index.html
@@ -23,7 +26,7 @@ function createWindow() {
   );
 
   // Open devtools
-  win.webContents().openDevTools();
+  win.webContents.openDevTools();
 
   win.on('closed', () => {
     win = null;
